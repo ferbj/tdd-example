@@ -1,7 +1,5 @@
 <?php
 
-//include __DIR__."./../../src/controllers/FizzBuzz.php";
-
 use Src\controllers\FizzBuzz;
 use \PHPUnit\Framework\TestCase;
 
