@@ -15,9 +15,11 @@ class UserAuthTest extends TestCase{
     /**
      * @test
      * @dataProvider usersProviders
+     * 
      */
-    public function registrar_usuarios($username, $password, $email, $expected): void
-    {   
+
+    public function registrar_usuarios(string $username, string $password, string $email, bool $expected): void
+    {
         $user = new UserAuth($username,$password,$email);
         $result = $user->register();
         $this->assertEquals($expected, $result);
@@ -38,7 +40,7 @@ class UserAuthTest extends TestCase{
      * @test
      * @dataProvider userLogin
      */
-    public function login_user($username, $password, $expected): void
+    public function login_user(string $username, string $password, bool $expected): void
     {
         $loguser =  new UserAuth($username,$password);
         $result = $loguser->login();

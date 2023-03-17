@@ -12,7 +12,6 @@ use PDOException;
 
 class UserAuth extends UserAuthModel
 {
-    
     public function register()
     {
         

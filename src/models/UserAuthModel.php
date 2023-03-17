@@ -13,7 +13,8 @@ class UserAuthModel
     protected $username;
     protected $password;
     protected $email;
-    public function __construct($username,$password,$email = null){
+    public function __construct(string $username, string $password, string $email = null)
+    {
         $this->username = $username;
         $this->password = $password;
         $this->email = $email;
